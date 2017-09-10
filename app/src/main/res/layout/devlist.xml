@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup 
+        android:id="@+id/RgSearchDev"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+        <RadioButton 
+            android:id="@+id/RbPairedDev"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rbPairedDev"
+            android:checked="true"/>
+        <RadioButton 
+            android:id="@+id/RbNewDev"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rbNewDev"
+            /> 
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/TvDevList"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RgSearchDev"
+        android:textSize="15dip"  
+        android:textColor="#990000"
+        android:background="#999999"
+        android:height="20dip"
+        android:text="@string/tvDevList" />
+
+    <ListView 
+        android:id="@+id/LvDevList"
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:layout_below="@+id/TvDevList"
+     	android:entries="@array/arrayAntiQ">
+        
+    </ListView>
+	
+	<Button 
+        android:id="@+id/BtDisconnect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btDisconnect"
+        android:layout_marginTop="5dp"/>
+    
+</RelativeLayout>

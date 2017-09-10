@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+    
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical"
+		android:layout_margin="5dip">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+			<EditText 
+			    android:id="@+id/EtBinPath"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:hint="@string/etHintBin" />
+			<EditText 
+			    android:id="@+id/EtMac"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:hint="@string/etHintMac" />
+        </LinearLayout>
+        <RelativeLayout
+	        android:layout_height="40dip"
+	        android:layout_width="fill_parent">
+	        <ProgressBar
+		    android:id="@+id/PbUpdate"
+		    android:layout_height="40dip"
+		    android:layout_width="40dip"
+		    android:layout_centerInParent="true"
+		     />
+    	</RelativeLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+			<Button
+				android:id="@+id/BtUpdate"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/btUpdate" />
+            
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    

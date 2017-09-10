@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/TvGetUiiForOperation"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:textSize="15dip"  
+        android:textColor="#990000"
+        android:background="#999999"
+        android:height="20dip"
+        android:text="@string/tvGetUiiForOperation" />
+
+    <ListView 
+        android:id="@+id/LvUiiList"
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:layout_below="@+id/TvGetUiiForOperation" >
+        
+    </ListView>
+	
+	<Button 
+        android:id="@+id/BtReadUii"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btReadUii"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

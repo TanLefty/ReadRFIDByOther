@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+    
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical"
+		android:layout_margin="5dip">
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvMode"/>
+			<Spinner
+				android:id="@+id/SpinnerMode"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:entries="@array/arrayMode"/>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvFreRange"/>
+			<EditText
+				android:id="@+id/EtFreRange"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="" />
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvStartFreI"/>
+
+			<EditText
+				android:id="@+id/EtStartFreI"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:hint="" 
+				android:text="@string/tvFreI"
+				android:layout_weight="5"/>
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/tvMHz"/>
+
+			<Button
+				android:id="@+id/BtAddI"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btAddI"
+				android:layout_weight="2" />
+			<Button
+				android:id="@+id/BtReduceI"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btReduceI"
+				android:layout_weight="2" />
+			
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvStartFreD"/>
+
+			<EditText
+				android:id="@+id/EtStartFreD"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:hint="" 
+				android:text="@string/tvFreD"
+				android:layout_weight="5" />
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/tvKHz"/>
+
+			<Button
+				android:id="@+id/BtAddD"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btAddD"
+				android:layout_weight="2" />
+			<Button
+				android:id="@+id/BtReduceD"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btReduceD"
+				android:layout_weight="2" />
+			
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvBase"/>
+			<Spinner
+				android:id="@+id/SpinnerBase"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:entries="@array/arrayBase"
+				android:layout_weight="5" />
+			<EditText 
+				android:id="@+id/EtBase"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:hint=""
+				android:layout_weight="4" />    
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView 
+				android:layout_width="72dip"
+				android:layout_height="wrap_content"
+				android:text="@string/tvChannelCount"/>
+			
+			<EditText
+				android:id="@+id/EtChannelCount"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="" />
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvChinnelSpace"/>
+			<Spinner
+				android:id="@+id/SpinnerSpace"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:entries="@array/arrayChannelSpc0"
+				android:layout_weight="5" />
+			<EditText 
+				android:id="@+id/EtSpace"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:hint=""
+				android:layout_weight="3" /> 
+				<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/tvKHz"/>   
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvHop"/>
+			<Spinner
+				android:id="@+id/SpinnerHop"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:entries="@array/arrayHop"
+				android:layout_weight="5" />
+			<Button
+				android:id="@+id/BtCalRange"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btCalRange"
+				android:layout_weight="4" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		    <Button
+				android:id="@+id/BtSetFre"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btSetFre"
+				android:layout_weight="1" />
+		    <Button
+				android:id="@+id/BtGetFre"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btGetFre"
+				android:layout_weight="1" />
+		</LinearLayout>
+		
+	</LinearLayout>
+</ScrollView>

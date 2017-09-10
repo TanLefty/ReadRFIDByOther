@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal" >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:text="@string/tvTagUii_Data"
+        	android:layout_marginLeft="2dip"
+        	android:textColor="#990000"
+        	/>
+	    <TextView 
+	        android:id="@+id/TvTagUii_Data"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal" >
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="@string/tvBank_Data"
+	        android:layout_marginLeft="2dip"
+	        android:textColor="#990000"
+	        />
+	    <TextView 
+	        android:id="@+id/TvBank_Data"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        />
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="@string/tvPtr_Data"
+	        android:layout_marginLeft="2dip"
+	        android:textColor="#990000"
+	        />
+	    <TextView 
+	        android:id="@+id/TvPtr_Data"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        />
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="@string/tvLen_Data"
+	        android:layout_marginLeft="2dip"
+	        android:textColor="#990000"
+	        />
+	    <TextView 
+	        android:id="@+id/TvLen_Data"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        />
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="@string/tvCount_Data"
+	        android:layout_marginLeft="2dip"
+	        android:textColor="#990000"
+	        />
+	    <TextView 
+	        android:id="@+id/TvCount_Data"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal" >
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="@string/tvData_Data"
+	        android:layout_marginLeft="2dip"
+	        android:textColor="#990000"
+	        />
+	    <TextView 
+	        android:id="@+id/TvData_Data"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        />
+	    <!-- tiaoshi -->
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="@string/tvError_Data"
+	        android:layout_marginLeft="2dip"
+	        android:textColor="#990000"
+	        />
+	    <TextView 
+	        android:id="@+id/TvError_Data"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        />
+	</LinearLayout> 
+	
+</LinearLayout>

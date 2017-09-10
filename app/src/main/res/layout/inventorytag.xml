@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/layout0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+       
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvCountOfTags"/>
+        
+        <EditText
+            android:id="@+id/EtCountOfTags"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:layout_weight="2" />
+        
+        <Button 
+            android:id="@+id/BtClear"
+            android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:text="@string/btClear"
+       	    android:layout_weight="3" />
+      </LinearLayout>
+    
+	<RadioGroup
+	     android:id="@+id/RgInventory"
+	     android:orientation="horizontal"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content">
+	
+	     <RadioButton 
+	     	android:id="@+id/RbInventorySingle"
+	     	android:layout_height="wrap_content"
+	     	android:layout_weight="3"
+	     	android:text="@string/rbInventorySingle" />
+	 
+	   	<RadioButton 
+	       	android:id="@+id/RbInventoryLoop"
+	       	android:layout_height="wrap_content"
+	       	android:layout_weight="3"
+	       	android:text="@string/rbInventoryLoop"
+	       	android:checked="true" />
+	  
+	   	<RadioButton 
+	       	android:id="@+id/RbInventoryAnti"
+	       	android:layout_height="wrap_content"
+	       	android:layout_weight="3"
+	       	android:text="@string/rbInventoryAnti" />
+	     
+	 </RadioGroup>
+	
+	<LinearLayout 
+       android:id="@+id/layout2"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       
+       <TextView 
+           android:layout_width="50dip"
+           android:layout_height="wrap_content"
+           android:text="@string/tvQ" />
+       
+       <Spinner 
+       	android:id="@+id/SpinnerQ"
+       	android:layout_width="100dip"
+       	android:layout_height="wrap_content"
+       	android:entries="@array/arrayAntiQ"
+       	android:layout_weight="2" />   
+       	
+       <Button 
+           android:id="@+id/BtInventory"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/btInventory"
+           android:layout_weight="3" />
+	</LinearLayout>	
+
+       <LinearLayout 
+            android:id="@+id/layout4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+			<TextView 
+		       android:layout_height="wrap_content"
+		       android:layout_width="0dip"
+		       android:text="@string/tvTagUii"
+		       android:textColor="#990000"
+        	   android:background="#999999"
+		       android:layout_weight="5" />
+			   
+		   <TextView 
+		       android:layout_height="wrap_content"
+		       android:layout_width="0dip"
+		       android:text="@string/tvTagLen"
+		       android:textColor="#990000"
+        	   android:background="#999999"
+		       android:layout_weight="1" />
+		   
+		   <TextView 
+		       android:layout_height="wrap_content"
+		       android:layout_width="0dip"
+		       android:text="@string/tvTagCount"
+		       android:textColor="#990000"
+        	   android:background="#999999"
+		       android:layout_weight="1" />
+		</LinearLayout>
+
+       	<ListView
+       	   android:id="@+id/LvTags"
+       	   android:layout_width="fill_parent"
+       	   android:layout_height="fill_parent"/>
+  
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical"
+		android:layout_margin="5dip">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvBank_Select"/>
+
+			<Spinner
+				android:id="@+id/SpinnerBank_Select"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:entries="@array/arrayBank"
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvPtr_Select"/>
+
+			<EditText
+				android:id="@+id/EtPtr_Select"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:hint=""
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvMask"/>
+
+			<EditText
+				android:id="@+id/EtMask_Select"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:hint=""
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvOrder"/>
+            <Spinner
+                android:id="@+id/SpinnerOrder_Add"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:entries="@array/arrayNum" />
+
+			<Button
+				android:id="@+id/BtAdd_Select"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btAdd_Select"
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvOrder"/>
+            <Spinner
+                android:id="@+id/SpinnerOrder_Del"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:entries="@array/arrayNum" />
+
+			<Button
+				android:id="@+id/BtDel_Select"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btDel_Select"
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvOrder"/>
+            <Spinner
+                android:id="@+id/SpinnerOrder_Read"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:entries="@array/arrayNum" />
+			<EditText
+				android:id="@+id/EtNum_Read"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="@string/num" />
+			<Button
+				android:id="@+id/BtRead_Select"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btRead_Select"
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvOrder"/>
+            <Spinner
+                android:id="@+id/SpinnerOrder_Choose"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:entries="@array/arrayNum" />
+			<EditText
+				android:id="@+id/EtNum_choose"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="@string/num" />
+			<Button
+				android:id="@+id/BtChoose_Select"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btChoose_Select"
+				android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

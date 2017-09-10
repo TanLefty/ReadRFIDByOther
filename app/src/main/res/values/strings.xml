@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+
+    <string name="app_name">BackPower_UHF_软件</string>
+
+    <!-- devlist -->
+    <string name="btDisconnect">断开连接</string>
+    <string name="rbPairedDev">已配对设备</string>
+    <string name="rbNewDev">未配对设备</string>
+    <string name="btTest">测试</string>
+    <string name="tvDevList">蓝牙设备列表</string>
+    
+    <!-- inventorytag -->
+    <string name="tvInventoryName">识别标签</string>
+    <string name="tvCountOfTags">标签数&#160;&#160;</string>
+    <string name="rbInventorySingle">单步</string>
+    <string name="rbInventoryLoop">单标签循环</string>
+    <string name="rbInventoryAnti">防碰撞</string>
+    <string name="tvQ">Q值：</string>
+    <string name="btInventory">识别标签</string>
+    <string name="tvTagUii">标签号</string>
+    <string name="tvTagLen">长度</string>
+    <string name="tvTagCount">次数</string>
+    <string name="btClear">清空数据</string>
+    <string-array name="arrayAntiQ">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    
+    <!-- read （选中后可以先识别标签，并选择标签号）-->
+    <string name="btUii">读标签号</string>
+    <string name="ckWithUii">指定标签</string>
+    <string name="tvTagUii_Read">标&#160;&#160;签&#160;&#160;号：</string>
+    <string name="tvBank">存&#160;&#160;储&#160;&#160;区：</string>
+    <string name="tvPtr">地&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;址：</string>
+    <string name="tvLen">长&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;度：</string>
+    <string name="tvAccessPwd">访问密码：</string>
+    <string name="tvOption_Read">读取模式：</string>
+    <string name="ckLoop_Read">循环</string>
+	<string name="ckAnti_Read">防碰撞</string>
+	<string name="ckSecond">2级参数设置</string>
+	<string name="tvBank2_Read">存&#160;&#160;储&#160;&#160;区：</string>   
+	<string name="tvPtr2_Read">地&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;址：</string>
+    <string name="tvLen2_Read">长&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;度：</string> 
+    <string name="tvData_Read">读取数据：</string>
+    <string name="btRead">读取数据</string>
+    <string-array name="arrayBank">
+        <item>RESERVED</item>
+        <item>UII</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+    <string-array name="arrayOption_Read">
+        <item>单次读</item>
+        <item>循环读</item>
+        <item>防碰撞读（1级）</item>
+        <item>防碰撞读（2级）</item>
+    </string-array>
+    
+    <!-- chooseuii -->
+    <string name="tvChooseInfo">请选择UII的去向</string>
+    <string name="rbRead">读取数据</string>
+    <string name="rbWrite">写入数据</string>
+    <string name="rbErase">擦除数据</string>
+    <string name="rbLock">锁定数据</string>
+    <string name="btEnter">确定</string>
+    <string name="btCancel">取消</string>
+    
+    <!-- getuiiforoperation -->
+    <string name="tvGetUiiForOperation">标签列表</string>
+    <string name="btReadUii">读取UII</string>
+    
+    <!-- datalist -->
+    <string name="btStop">停止</string>
+    <string name="btBack1">返回</string>
+    
+    <!-- datalist_items -->
+    <string name="tvTagUii_Data">标签号：</string>
+    <string name="tvBank_Data">存储区：</string>
+    <string name="tvPtr_Data">地址：</string>
+    <string name="tvLen_Data">长度：</string>
+    <string name="tvCount_Data">次数：</string>
+    <string name="tvData_Data">数据：</string>
+    <string name="tvError_Data">错误码：</string>
+    
+    <!-- write -->
+    <string name="tvTagUii_Write">标&#160;&#160;签&#160;&#160;号：</string>
+	<string name="tvOption_Write">写入模式：</string>
+	<string name="tvData_Write">写入数据：</string>
+	<string name="btWrite">写入数据</string>
+	<string-array name="arrayOption_Write">
+	    <item>单字单次</item>
+	    <item>多字单次</item>
+	    <item>单字循环</item>
+	    <item>多字循环</item>
+	</string-array>
+	
+	<!-- lock -->
+	<string name="tvTagUii_Lock">标&#160;&#160;签&#160;&#160;号：</string>
+	<string name="tvKill_Lock">KillPwd：</string>
+	<string name="tvAccess_Lock">AccessPwd：</string>
+	<string name="tvUII_Lock">UII：</string>
+	<string name="tvTID_Lock">TID：</string>
+	<string name="tvUSER_Lock">USER：</string>
+	<string name="tvLockCode_Lock">锁&#160;&#160;定&#160;&#160;码：</string>
+	<string name="btCreateCode">生成</string>
+	<string name="btLock">锁定</string>
+	<string-array name="arrayLock">
+	    <item>保持状态</item>
+	    <item>锁定</item>
+	    <item>解锁</item>
+	    <item>永久锁定</item>
+	    <item>永久解锁</item>
+	</string-array>
+	
+	<!-- killtag -->
+	<string name="tvTagUii_Kill">标&#160;&#160;签&#160;&#160;号：</string>
+	<string name="tvKillPwd">销毁密码：</string>
+	<string name="btKill">销毁</string>
+	
+	<!-- select -->
+	<string name="tvBank_Select">存储区：</string>
+	<string name="tvPtr_Select">地&#160;&#160;&#160;&#160;址：</string>
+	<string name="tvMask">掩&#160;&#160;&#160;&#160;码：</string>
+	<string name="tvOrder">序&#160;&#160;&#160;&#160;号：</string>
+	<string name="num">数量：</string>
+	<string name="btAdd_Select">添加</string>
+	<string name="btDel_Select">删除</string>
+	<string name="btChoose_Select">选择</string>
+	<string name="btRead_Select">读取</string>
+	<string-array name="arrayNum">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>10</item>
+	    <item>11</item>
+	    <item>12</item>
+	    <item>13</item>
+	    <item>14</item>
+	    <item>15</item>
+	</string-array>
+	
+	<!-- selectlist -->
+	<string name="btBack_Select">返回</string>
+	
+	<!-- selectlist_items -->
+	<string name="tvIndex_SelectList">序号：</string>
+	<string name="tvTarget_SelectList">Target：</string>
+	<string name="tvAction_SelectList">Action：</string>
+	<string name="tvTruncate_SelectList">Truncate：</string>
+	<string name="tvBank_SelectList">存储区：</string>
+	<string name="tvPtr_SelectList">地址：</string>
+	<string name="tvLen_SelectList">长度：</string>
+	<string name="tvMask_SelectList">Mask：</string>
+	
+	<!-- erase -->
+	<string name="tvTagUii_Erase">标&#160;&#160;签&#160;&#160;号：</string>
+	<string name="btErase">擦除</string>
+	
+	<!-- power -->
+	<string name="tvPower">输出功率：</string>
+	<string name="btSetPower">设置功率</string>
+	<string name="btGetPower">读取功率</string>
+	<string name="tvdBm">dBm</string>
+	<string-array name="arrayPower">
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>10</item>
+	    <item>11</item>
+	    <item>12</item>
+	    <item>13</item>
+	    <item>14</item>
+	    <item>15</item>
+	    <item>16</item>
+	    <item>17</item>
+	    <item>18</item>
+	    <item>19</item>
+	    <item>20</item>
+	    <item>21</item>
+	    <item>22</item>
+	    <item>23</item>
+	    <item>24</item>
+	    <item>25</item>
+	    <item>26</item>
+	    <item>27</item>
+	    <item>28</item>
+	    <item>29</item>
+	    <item>30</item>
+	</string-array>
+	
+	<!-- frequency -->
+	<string name="tvMode">工作模式：</string>
+	<string name="btSetFre">设置频率</string>
+	<string name="tvFreRange">频率范围：</string>
+	<string name="btGetFre">读取频率</string>
+	<string name="tvStartFreI">起始频率整数：</string>
+	<string name="tvFreI">840</string>
+	<string name="btAddI">+</string>
+	<string name="btReduceI">-</string>
+	<string name="tvStartFreD">起始频率小数：</string>
+	<string name="tvFreD">50</string>
+	<string name="btAddD">+</string>
+	<string name="btReduceD">-</string>
+	<string name="tvBase">频率基数：</string>
+	<string name="tvChannelCount">频道数：</string>
+	<string name="tvChinnelSpace">频道带宽：</string>
+	<string name="tvHop">跳频方式：</string>
+	<string name="btCalRange">计算</string>
+	<string name="tvMHz">MHz</string>
+	<string name="tvKHz">KHz</string>
+	<string-array name="arrayMode">
+	    <item>中国标准920~925MHz</item>
+        <item>中国标准840~845MHz</item>
+        <item>ETSI标准</item>
+        <item>定频模式</item>
+        <item>用户自定义</item>
+	</string-array>
+	<string-array name="arrayBase">
+	    <item>0</item>
+        <item>1</item>
+	</string-array>
+	<string-array name="arrayChannelSpc0">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="arrayChannelSpc1">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+	<string-array name="arrayHop">
+	    <item>随机跳频</item>
+        <item>从高往低顺序跳频</item>
+        <item>从低往高顺序跳频</item>
+	</string-array>
+	
+	<!-- register -->
+	<string name="tvRegAddr">地址：</string>
+	<string name="tvRegLen">长度：</string>
+	<string name="reglen">1</string>
+	<string name="tvRegData">数据：</string>
+	<string name="btSetRegister">设置</string>
+	<string name="btGetRegister">读取</string>
+	<string name="tvBuzzer">蜂鸣器：&#160;</string>
+	<string name="btSetBeep">设置</string>
+	<string name="tvTimer">Timer：&#160;&#160;&#160;</string>
+	<string name="btSetTimer">设置</string>
+	<string name="btSaveRegister">保存当前设置</string>
+	<string name="btResetRegister">恢复默认设置</string>
+	
+	<!-- update -->
+	<string name="etHintBin">请在此输入Bin文件的完整名称（如：PB300_2013313273_V0.8.4.bin），并将其拷贝到sdcard目录下</string>
+	<string name="etHintMac">请在此输入MAC地址</string>
+	<string name="btUpdate">升级</string>
+	
+	<!-- other -->
+	<string name="btReadRlmInfo">读取RLM信息</string>
+	<string name="btReadUID">读取UID信息</string>
+	<string name="btSleep">进入Sleep模式</string>
+	<string-array name="SpinnerBuzzer">
+	    <item>关闭</item>
+	    <item>打开</item>
+	</string-array>
+	
+	<!-- about -->
+	<string name="about">本软件版权</string>
+</resources>

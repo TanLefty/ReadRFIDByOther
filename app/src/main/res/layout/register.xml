@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+    
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical"
+		android:layout_margin="5dip">
+		
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvRegAddr"/>
+
+			<EditText
+				android:id="@+id/EtRegAddr"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:hint="" 
+				android:layout_weight="1"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvRegLen"/>
+
+			<EditText
+				android:id="@+id/EtRegLen"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/reglen"
+				android:hint="" 
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvRegData"/>
+
+			<EditText
+				android:id="@+id/EtRegData"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:hint="" 
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button 
+                android:id="@+id/BtSetRegister"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btSetRegister"
+				android:layout_weight="1"/>
+            <Button 
+                android:id="@+id/BtGetRegister"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btGetRegister"
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvBuzzer"/>
+
+			<Spinner 
+			    android:id="@+id/SpinnerBuzzer"
+			    android:layout_width="0dip"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="2"
+			    android:entries="@array/SpinnerBuzzer" />
+
+			<Button
+				android:id="@+id/BtSetBeep"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btSetBeep"
+				android:hint="" 
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvTimer"/>
+
+			<EditText 
+			    android:id="@+id/EtTimer"
+			    android:layout_width="0dip"
+			    android:layout_height="wrap_content"
+			    android:hint=""
+			    android:layout_weight="2" />
+
+			<Button
+				android:id="@+id/BtSetTimer"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btSetTimer"
+				android:hint="" 
+				android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button 
+                android:id="@+id/BtSaveRegister"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btSaveRegister"
+				android:layout_weight="1"/>
+            <Button 
+                android:id="@+id/BtResetRegister"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:text="@string/btResetRegister"
+				android:layout_weight="1"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+</ScrollView>
